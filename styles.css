@@ -17,6 +17,9 @@ body{
 h1,h2,h3,h4,h5{
     font-family: "Lora";
 }
+p{
+    font-family: "Poppins";
+}
 header{    
     width: 100%;
     height: 5rem;
@@ -85,7 +88,7 @@ main{
     align-items: center;
     position: absolute;
     width: 100%;
-    top:35%;
+    top:30%;
 }
 h2{
     font-size: 48px;
@@ -96,6 +99,11 @@ h3{
     font-size: 20px;
     color: rgb(200,200,200);
     font-style: italic;
+}
+#beginning>div>p{
+    font-size: 38px;
+    position: relative;
+    top:3rem;
 }
 #whoIm{
     width: 100%;
@@ -137,28 +145,30 @@ h3{
     height: 22rem;
 }
 .service-kind{
-    width:20vw;
-    height: 40vw;
     display: flex;
+    width:20vw;
+    height: 30vw;
     flex-direction: column;
     position: relative;
-    top:-12rem;
+    top:-8rem;
     align-items: center;
-    outline-offset: 0px;
     align-self: stretch;
     background-color: var(--secondary-color);
     color: #999999;
+    padding: 1rem 1rem 5rem 1rem;
+    text-align: center;
+    justify-content: space-around;
 }
 .icon{
-    width: 4rem;
-    height: 4rem;
-    margin: 2rem 0 1rem 0;
+    width: 6rem;
+    height: 6rem;
+    padding: 1rem;
     background-size: cover;
     background: var(--tertiary-color);
+    border-radius: 3px;
 }
-#money-icon{
-    mask: url(./icons/money.svg);
-    mask-size: cover;
+/* #money-icon>img{
+
 }
 #employee-icon{
     mask: url(./icons/employee.svg);
@@ -171,7 +181,7 @@ h3{
 #gavel-icon{
     mask: url(./icons/gavel.svg);
     mask-size: cover;
-}
+} */
 h4{
     color: var(--tertiary-color);
     font-size: 20px;
@@ -182,7 +192,7 @@ h4{
 }
 #contact{
     width: 100%;
-    height: 80vh;
+    height: 40vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -190,21 +200,16 @@ h4{
     z-index: 600;
     color: white;
     font-weight: 500;
+    font-size: 24px;
 }
-#direction{
-    align-items: center;
-    width: 40%;
-}
-#adresses{
+.contact-detail{
+    width: 100%;
+    height: 60%;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    width: 40%;
-}
-#map{
-    margin-top: 2rem;
-    height: 50vh;
-    width: 40vw;
-    background-color: gray;
+    justify-content: space-around;
+    text-align: justify;
 }
 footer{
     width: 100%;
